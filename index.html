@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trying to Deploy Some Change</title>
+    <title>Особистий Кабінет</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index_styles.css" />
   </head>
   <body>
-    <h1>Som Text</h1>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <button class="edit-profile-btn">Редагування профілю</button>
+
+        <nav class="sidebar-nav">
+          <div class="nav-item">Особистий кабінет</div>
+          <div class="nav-item">
+            <a href="pdf/richnyi_plan.pdf" target="_blank">Річний План</a>
+          </div>
+          <div class="nav-item">
+            <a href="pdf/monitoring.pdf" target="_blank">Моніторинг</a>
+          </div>
+          <div class="nav-item">
+            <a href="pdf/project.pdf" target="_blank">Проєкт</a>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <div class="topbar">
+          <button class="add-btn">Додати</button>
+        </div>
+
+        <div class="class-list">
+          <div class="class-row">
+            <div class="class-name">Старша</div>
+            <div class="class-actions">
+              <button class="view-btn">Переглянути</button>
+              <button class="edit-link">Редагувати</button>
+            </div>
+          </div>
+
+          <div class="class-row">
+            <div class="class-name">Середня</div>
+            <div class="class-actions">
+              <button class="view-btn">Переглянути</button>
+              <button class="edit-link">Редагувати</button>
+            </div>
+          </div>
+
+          <div class="class-row">
+            <div class="class-name">Молодша</div>
+            <div class="class-actions">
+              <button class="view-btn">Переглянути</button>
+              <button class="edit-link">Редагувати</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index_script.js"></script>
   </body>
 </html>
